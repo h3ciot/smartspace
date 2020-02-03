@@ -1,0 +1,66 @@
+
+@header-width: 50px;
+
+#basic-layout{
+  background: #f6f6f6;
+  min-width: 1200px;
+  .logo {
+    width: 100%;
+    z-index: 1000;
+    height: @header-width;
+    float: left;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+    position: relative;
+    transition: all 0.3s;
+    overflow: hidden;
+    a {
+      width: 100%; height: 100%;display: block;
+    }
+    img { width: 100%; height: 100%; vertical-align: unset;}
+    span { margin-left: 16px; font-size: 18px; line-height: 24px; font-weight: bold;
+      color: white;
+    }
+  }
+  .blackHeader {
+    height: @header-width;
+    line-height: @header-width;
+    box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+  }
+  >.ant-layout {
+    min-width: 0;
+    >.ant-layout-header {
+      height: @header-width;
+      line-height: @header-width;
+      box-shadow: 0px 1px 0px 0px rgba(0,0,0,0.1);
+    }
+  }
+  .trigger {
+    font-size: 18px;
+    line-height: 50px;
+    padding: 0 24px;
+    cursor: pointer;
+    -webkit-transition: color .3s;
+    -o-transition: color .3s;
+    transition: color .3s;
+    float: left;
+  }
+  .shopName {
+    float: left;
+  }
+  .ant-layout-content{
+    flex: 1;
+  }
+}
+
+
+.scroll() {
+  &::-webkit-scrollbar { width: 6px; height: 6px;}
+  &::-webkit-scrollbar-track { background: 0 0;}
+  &::-webkit-scrollbar-thumb { background-color: #5B5F84; border-radius: 4px;}
+}
+
+//.scroll();
+
+.ant-layout.ant-layout-has-sider > .ant-layout, .ant-layout.ant-layout-has-sider > .ant-layout-content {
+  overflow-x: unset;
+}

@@ -1,0 +1,26 @@
+[ignore]
+.*/node_modules/*
+.*/dist/.*
+.*/build/.*
+
+[include]
+
+[libs]
+flow/declarations/
+
+[options]
+esproposal.decorators=ignore
+esproposal.class_static_fields=enable
+esproposal.class_instance_fields=enable
+esproposal.export_star_as=enable
+module.name_mapper='^components\/\(.*\)$' -> '<PROJECT_ROOT>/src/components/\1'
+module.name_mapper='^containers\/\(.*\)$' -> '<PROJECT_ROOT>/src/containers/\1'
+module.name_mapper='^modules\/\(.*\)$' -> '<PROJECT_ROOT>/src/redux/modules/\1'
+module.name_mapper='^images\/\(.*\)$' -> '<PROJECT_ROOT>/src/assets/images/\1'
+module.name_mapper='^utils\/\(.*\)$' -> '<PROJECT_ROOT>/src/utils/\1'
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/flow/CSSModule.js.flow'
+module.name_mapper.extension='less' -> '<PROJECT_ROOT>/flow/CSSModule.js.flow'
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/flow/CSSModule.js.flow'
+module.name_mapper.extension='.*\.\(svg\|png\|jpg\|gif\)$' -> '<PROJECT_ROOT>/flow/WebpackAsset.js.flow'
+suppress_comment=\\(.\\|\n\\)*\\$FlowFixMe
+suppress_comment=\\(.\\|\n\\)*\\$FlowIssue

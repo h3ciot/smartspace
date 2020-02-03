@@ -1,0 +1,121 @@
+{
+  "id": "1459399",
+  "name": "园区大屏配置",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "371809",
+      "name": "下拉",
+      "font_class": "xiala",
+      "unicode": "e61c",
+      "unicode_decimal": 58908
+    },
+    {
+      "icon_id": "817313",
+      "name": "下拉",
+      "font_class": "xiala1",
+      "unicode": "e68a",
+      "unicode_decimal": 59018
+    },
+    {
+      "icon_id": "7636577",
+      "name": "绑定",
+      "font_class": "bangding",
+      "unicode": "e61e",
+      "unicode_decimal": 58910
+    },
+    {
+      "icon_id": "7636578",
+      "name": "解绑",
+      "font_class": "jiebang",
+      "unicode": "e61f",
+      "unicode_decimal": 58911
+    },
+    {
+      "icon_id": "11302701",
+      "name": "三角形",
+      "font_class": "sanjiaoxing",
+      "unicode": "e635",
+      "unicode_decimal": 58933
+    },
+    {
+      "icon_id": "11302703",
+      "name": "主页",
+      "font_class": "zhuye",
+      "unicode": "e637",
+      "unicode_decimal": 58935
+    },
+    {
+      "icon_id": "11303296",
+      "name": "恢复",
+      "font_class": "huifu",
+      "unicode": "e638",
+      "unicode_decimal": 58936
+    },
+    {
+      "icon_id": "11303300",
+      "name": "shexiangtou",
+      "font_class": "shexiangtou",
+      "unicode": "e639",
+      "unicode_decimal": 58937
+    },
+    {
+      "icon_id": "11303301",
+      "name": "摄像头配置",
+      "font_class": "shexiangtoupeizhi",
+      "unicode": "e63a",
+      "unicode_decimal": 58938
+    },
+    {
+      "icon_id": "11499466",
+      "name": "tishi",
+      "font_class": "tishi",
+      "unicode": "e63d",
+      "unicode_decimal": 58941
+    },
+    {
+      "icon_id": "11553010",
+      "name": "返回",
+      "font_class": "fanhui",
+      "unicode": "e63c",
+      "unicode_decimal": 58940
+    },
+    {
+      "icon_id": "11659789",
+      "name": "开始",
+      "font_class": "kaishi",
+      "unicode": "e63e",
+      "unicode_decimal": 58942
+    },
+    {
+      "icon_id": "11659791",
+      "name": "暂停",
+      "font_class": "zanting",
+      "unicode": "e63f",
+      "unicode_decimal": 58943
+    },
+    {
+      "icon_id": "11659792",
+      "name": "删除",
+      "font_class": "shanchu",
+      "unicode": "e640",
+      "unicode_decimal": 58944
+    },
+    {
+      "icon_id": "11659798",
+      "name": "编辑",
+      "font_class": "bianji",
+      "unicode": "e641",
+      "unicode_decimal": 58945
+    },
+    {
+      "icon_id": "11659799",
+      "name": "新增",
+      "font_class": "xinzeng",
+      "unicode": "e642",
+      "unicode_decimal": 58946
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+**/*.md
+**/*.svg
+**/*.html
+**/*.ejs
+flow-typed
+build
+vendor
+assets
+package.json

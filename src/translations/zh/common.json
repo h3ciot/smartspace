@@ -1,0 +1,22 @@
+{
+  "iot.platform.main.menu.overview": "概览",
+  "iot.platform.common.add": "新增",
+  "iot.platform.common.edit": "编辑",
+  "iot.platform.common.delete": "删除",
+  "iot.platform.common.modify": "修改",
+  "iot.platform.common.save": "保存",
+  "iot.platform.common.copy": "复制",
+  "iot.platform.common.top": "置顶",
+  "iot.platform.common.back": "退出",
+  "iot.platform.common.reset": "重置",
+  "iot.platform.common.name": "名称",
+  "iot.platform.common.description": "描述",
+  "iot.platform.common.apply": "应用",
+  "iot.platform.common.type": "类型",
+  "iot.platform.common.success.info": "操作成功",
+  "iot.platform.common.refresh": "刷新",
+  "iot.platform.common.project.error.backHome": "返回首页",
+  "iot.platform.common.logout": "退出登陆",
+  "iot.platform.common.error.title": "发生了意料之外的错误",
+  "iot.platform.common.error.subtitle": "请联系管理员或者刷新页面重试"
+}
