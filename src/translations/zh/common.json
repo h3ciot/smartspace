@@ -1,5 +1,10 @@
 {
-  "iot.platform.main.menu.overview": "概览",
+  "iot.platform.main.menu.home": "首页",
+  "iot.platform.main.menu.gateway_manage": "网关管理",
+  "iot.platform.main.menu.device_manage": "设备管理",
+  "iot.platform.main.menu.intelligent_strategy": "智能策略",
+  "iot.platform.main.menu.setting": "设置",
+  "zone.containers.NotFoundPage.header": "404：页面未找到",
   "iot.platform.common.add": "新增",
   "iot.platform.common.edit": "编辑",
   "iot.platform.common.delete": "删除",

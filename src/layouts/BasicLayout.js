@@ -19,20 +19,26 @@ class BasicLayout extends React.PureComponent {
     const menuData = getMenuData(match.url);
     return (
       <Layout id="basic-layout" style={{ height: '100%' }}>
-        <SiderMenu
-          logo={logo}
-          // 不带Authorized参数的情况下如果没有权限,会强制跳到403界面
-          // If you do not have the Authorized parameter
-          // you will be forced to jump to the 403 interface without permission
-          // Authorized={Authorized}
-          menuData={menuData}
-          // collapsed={true}
-          location={location}
-          isMobile={false}
-          // onCollapse={this.handleMenuCollapse}
-        />
         <Layout>
           <Header style={{ background: '#fff', padding: 0 }}>
+            <div className="logo">
+              <div className="logo-img">
+                <img src={logo} alt="" />
+              </div>
+              <div className="logo-title">智慧办公系统</div>
+            </div>
+            <SiderMenu
+              logo={logo}
+              // 不带Authorized参数的情况下如果没有权限,会强制跳到403界面
+              // If you do not have the Authorized parameter
+              // you will be forced to jump to the 403 interface without permission
+              // Authorized={Authorized}
+              menuData={menuData}
+              // collapsed={true}
+              location={location}
+              isMobile={false}
+              // onCollapse={this.handleMenuCollapse}
+            />
             {userInfo && (
               <div className="userInfo">
                 <Popover
@@ -70,8 +76,8 @@ class BasicLayout extends React.PureComponent {
               </div>
             )}
           </Header>
-          <Breadcrumb menuData={menuData} location={location} />
-          <Content style={{ margin: 20, minHeight: 600, height: '100%' }}>
+          {/*<Breadcrumb menuData={menuData} location={location} />*/}
+          <Content style={{ margin: 0, minHeight: 600, height: '100%' }}>
             <Switch>
               {routes.map(item => (
                 <Route

@@ -30,7 +30,7 @@ module.exports = {
   },
   mockOptions: {
     path: 'mock',
-    disable: true,
+    disable: false,
   },
   openPathname: '/',
   theme: {

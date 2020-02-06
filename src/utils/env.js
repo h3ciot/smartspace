@@ -6,6 +6,7 @@ type EnvProps = { [key: string]: string };
 
 const environmentMapping: { [key: string]: string } = {
   REACT_APP_ROUTE_PREFIX: 'ROUTE_PREFIX',
+  REACT_APP_RESTAPI_PREFIX: 'RESTAPI_PREFIX',
 };
 
 const envProps: EnvProps = Object.keys(environmentMapping).reduce((acc, val) => {

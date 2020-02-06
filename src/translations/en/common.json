@@ -1,5 +1,11 @@
 {
+  "iot.platform.main.menu.home": "Home",
+  "iot.platform.main.menu.gateway_manage": "GatewayManage",
+  "iot.platform.main.menu.device_manage": "DeviceManage",
+  "iot.platform.main.menu.intelligent_strategy": "IntelligentStrategy",
+  "iot.platform.main.menu.setting": "Setting",
   "iot.platform.main.menu.overview": "Overview",
+  "zone.containers.NotFoundPage.header": "404: Page not found",
   "iot.platform.common.add": "add",
   "iot.platform.common.edit": "edit",
   "iot.platform.common.delete": "delete",

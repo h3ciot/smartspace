@@ -1,14 +1,4 @@
 
-.logo {
-  position: relative;
-  transition: all 0.3s;
-  background: #002140;
-  overflow: hidden;
-  img {
-    display: inline-block;
-    height: 64px;
-  }
-}
 .menu-container {
   position: relative;
   top: 51px;
@@ -23,14 +13,6 @@
   }
 }
 
-
-
-.ant-layout-sider-collapsed {
-  .logo {
-    margin-left: -1px;
-  }
-}
-
 .sider {
   min-height: 100vh;
   box-shadow: 2px 0 6px rgba(0, 21, 41, 0.35);
@@ -38,27 +20,13 @@
   z-index: 10;
   &.ligth {
     background-color: white;
-    .logo {
-      background: white;
-      h1 {
-        color: #002140;
-      }
-    }
   }
 }
 
-.menu-icon {
-  margin-right: 12px;
-}
+
 
 .ant-menu-inline-collapsed {
   & > .ant-menu-item, & > .ant-menu-submenu {
-    .menu-icon {
-      margin: 0;
-      & + span {
-        max-width: 0;
-        opacity: 0;
-      }
-    }
+    margin: 0 20px;
   }
 }

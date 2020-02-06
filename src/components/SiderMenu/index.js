@@ -216,9 +216,8 @@ export default class SiderMenu extends PureComponent {
       openKeys: moreThanOne ? [lastOpenKey] : [...openKeys],
     });
   };
-
   render() {
-    const { logo, collapsed, onCollapse } = this.props;
+    const { collapsed } = this.props;
     const { openKeys } = this.state;
     // Don't show popup menu when it is been collapsed
     const menuProps = collapsed
@@ -231,34 +230,17 @@ export default class SiderMenu extends PureComponent {
     if (!selectedKeys.length) {
       selectedKeys = [openKeys[openKeys.length - 1]];
     }
-    return (
-      <Sider
-        trigger={null}
-        collapsible
-        collapsed={collapsed}
-        breakpoint="lg"
-        onCollapse={onCollapse}
-        width={200}
-        className="side"
+    return this.menus.length ? (
+      <Menu
+        key="Menu"
+        {...menuProps}
+        onOpenChange={this.handleOpenChange}
+        selectedKeys={selectedKeys}
+        mode="horizontal"
+        style={{ textAlign: 'center' }}
       >
-        <div className="logo" key="logo">
-          <a href={process.env.REACT_APP_HOME_PATH}>
-            <img src={logo} alt="logo" />
-          </a>
-        </div>
-        {this.menus.length ? (
-          <Menu
-            key="Menu"
-            mode="inline"
-            {...menuProps}
-            onOpenChange={this.handleOpenChange}
-            selectedKeys={selectedKeys}
-            style={{ padding: '80px 0 30px 0', width: '100%' }}
-          >
-            {this.getNavMenuItems(this.menus)}
-          </Menu>
-        ) : null}
-      </Sider>
-    );
+        {this.getNavMenuItems(this.menus)}
+      </Menu>
+    ) : null;
   }
 }
