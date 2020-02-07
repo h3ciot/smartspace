@@ -39,42 +39,6 @@ class BasicLayout extends React.PureComponent {
               isMobile={false}
               // onCollapse={this.handleMenuCollapse}
             />
-            {userInfo && (
-              <div className="userInfo">
-                <Popover
-                  placement="bottom"
-                  arrowPointAtCenter
-                  content={
-                    <div className="userInfoDetail">
-                      <div className="infoItem link">
-                        <i className="iconfont icon-yingyongpeizhi" />
-                        <a href="/oasisapp/index.html">应用中心</a>
-                      </div>
-                      {/*<div className="infoItem link">*/}
-                      {/*<i className="iconfont icon-yijianfankui" />*/}
-                      {/*意见反馈*/}
-                      {/*</div>*/}
-                    </div>
-                  }
-                >
-                  <i className="iconfont icon-setting" />
-                </Popover>
-                <Popover
-                  placement="bottom"
-                  arrowPointAtCenter
-                  content={
-                    <div className="userInfoDetail">
-                      <div className="infoItem" title={userInfo.name}>
-                        <i className="iconfont icon-renwu-ren" />
-                        {userInfo.name}
-                      </div>
-                    </div>
-                  }
-                >
-                  <i className="iconfont icon-yonghu" />
-                </Popover>
-              </div>
-            )}
           </Header>
           {/*<Breadcrumb menuData={menuData} location={location} />*/}
           <Content style={{ margin: 0, minHeight: 600, height: '100%' }}>
@@ -87,11 +51,14 @@ class BasicLayout extends React.PureComponent {
                   exact={item.exact}
                 />
               ))}
-              {routes.length ? (
+              <Route exact path="/">
                 <Redirect to={routes[0].path} />
-              ) : (
-                <Route component={NotFoundPage} />
-              )}
+              </Route>
+              {/*{routes.length ? (*/}
+              {/*  */}
+              {/*) : (*/}
+              <Route component={NotFoundPage} />
+              {/*)}*/}
             </Switch>
           </Content>
         </Layout>

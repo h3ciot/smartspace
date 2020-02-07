@@ -1,11 +1,10 @@
 import React, { PureComponent } from 'react';
-import { Layout, Menu, Icon } from 'antd';
+import { Menu, Icon } from 'antd';
 import pathToRegexp from 'path-to-regexp';
 import { Link } from 'react-router-dom';
 import styles from './index.less';
 import { urlToList } from '../_utils/pathTools';
 import { FormattedMessage } from 'react-intl';
-const { Sider } = Layout;
 const { SubMenu } = Menu;
 
 // Allow menu.js config icon as string or ReactNode

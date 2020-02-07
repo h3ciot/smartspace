@@ -2,9 +2,7 @@
  * homepage reducer
  * @flow
  */
-import actionFactory, { handleActions, createAction } from 'utils/actionFactory';
-import env from 'utils/env';
-console.log(process.env);
+import actionFactory, { handleActions } from 'utils/actionFactory';
 const initialState = {
   deviceListLoading: false,
   deviceList: [],

@@ -102,6 +102,7 @@ const asyncActionFactory = (type: string) => (method: string) => {
           switch (method) {
             case 'DELETE':
               reqOptions.body = params;
+            // eslint-disable-next-line no-fallthrough
             case 'GET':
               url = `${url}?${stringify(params)}`;
               break;

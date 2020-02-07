@@ -38,7 +38,7 @@ class Home extends React.PureComponent<Props> {
     return (
       <div className="home-page">
         <div className="home-page-banners">
-          <Carousel style={{ height: 300 }}>
+          <Carousel style={{ height: 300 }} autoplay={true}>
             {banners.map((item, i) => (
               <div className="home-page-banner-item" key={i}>
                 <img src={item.img} alt="" />
@@ -48,13 +48,18 @@ class Home extends React.PureComponent<Props> {
         </div>
         <div className="home-page-device">
           <Spin spinning={loading}>
-            <Row>
+            <Row type="flex" justify="space-around" gutter={[48, 32]} style={{ margin: 0 }}>
               {deviceList.map(item => {
                 const { terminalType, total = 0, online = 0, offline = 0 } = item;
+                const { name, icon } = DeviceMap[terminalType];
                 return (
                   <Col key={terminalType} span={6}>
                     <div className="device-item">
-                      <div className="device-name"></div>
+                      <div className="device-name">
+                        <img className="device-icon" src={icon} alt={name} />
+                        <br />
+                        {name}
+                      </div>
                       <div className="device-count">
                         <span>总数&nbsp;&nbsp;{total}</span>
                         <br />

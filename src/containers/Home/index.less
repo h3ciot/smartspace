@@ -9,4 +9,43 @@
       height: 300px;
     }
   }
+  >.home-page-device {
+    >.ant-spin-nested-loading {
+      >.ant-spin-container {
+
+      }
+    }
+    .device-item {
+      width: 200px;
+      height:65px;
+      border-radius:4px;
+      margin-left: calc(~'50% - 100px');
+      >.device-name {
+        width: 50%;
+        border-radius:4px 0 0 4px;
+        display: inline-block;
+        height: 100%;
+        text-align: center;
+        font-weight:500;
+        color:rgba(0,0,0,1);
+        line-height:11px;
+        background: #d9d9d9;
+        vertical-align: top;
+        >.device-icon {
+          width: 40px;
+          height: 40px;
+          margin-bottom: 5px;
+        }
+      }
+      >.device-count {
+        width: 50%;
+        display: inline-block;
+        height: 100%;
+        background: #d5d5d5;
+        padding-left: 10px;
+        //text-align: center;
+        border-radius:0 4px 4px 0;
+      }
+    }
+  }
 }
