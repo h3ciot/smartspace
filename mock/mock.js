@@ -84,4 +84,112 @@ module.exports = {
       })
     );
   },
+  'GET /iot/iotsmartspace/group': function(req, res) {
+    res.json(
+      Mock.mock({
+        code: 0,
+        message: '',
+        data: {
+          groupList: [
+            {
+              groupId: 'root',
+              groupName: '全部',
+              children: [
+                {
+                  groupId: '1',
+                  groupName: '组1',
+                  children: [
+                    {
+                      groupId: '11',
+                      groupName: '组1-1',
+                      children: [],
+                    },
+                    {
+                      groupId: '12',
+                      groupName: '组1-2',
+                      children: [],
+                    },
+                    {
+                      groupId: '13',
+                      groupName: '组1-3',
+                      children: [],
+                    },
+                  ],
+                },
+                {
+                  groupId: '2',
+                  groupName: '组2',
+                  children: [
+                    {
+                      groupId: '21',
+                      groupName: '组2-1',
+                      children: [],
+                    },
+                    {
+                      groupId: '22',
+                      groupName: '组2-2',
+                      children: [],
+                    },
+                    {
+                      groupId: '23',
+                      groupName: '组2-3',
+                      children: [],
+                    },
+                  ],
+                },
+                {
+                  groupId: '3',
+                  groupName: '组3',
+                  children: [
+                    {
+                      groupId: '31',
+                      groupName: '组3-1',
+                      children: [],
+                    },
+                    {
+                      groupId: '32',
+                      groupName: '组3-2',
+                      children: [],
+                    },
+                    {
+                      groupId: '33',
+                      groupName: '组3-3',
+                      children: [],
+                    },
+                  ],
+                },
+              ],
+            },
+          ],
+        },
+      })
+    );
+  },
+  'POST /iot/iotsmartspace/group': function(req, res) {
+    res.json(
+      Mock.mock({
+        code: 0,
+        message: '',
+        data: {},
+      })
+    );
+  },
+  'PUT /iot/iotsmartspace/group': function(req, res) {
+    res.json(
+      Mock.mock({
+        code: 0,
+        message: '',
+        data: {},
+      })
+    );
+  },
+  'DELETE /iot/iotsmartspace/group': function(req, res) {
+    res.json(
+      Mock.mock({
+        code: 0,
+        message: '',
+        data: {},
+      })
+    );
+  },
 };
